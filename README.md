@@ -8,3 +8,6 @@ The bioinformatics pipeline included the following main steps:
 * Annotate SNPs with BCFtools (and GFF and GenBank files)
 * Infer phylogeny with FastTree/IQ-Tree
 * Develop Website with D3, JQuery, and JavaScript
+
+The live website is available at:
+http://borreliabase.org/~wgqiu/asm-challenge/
