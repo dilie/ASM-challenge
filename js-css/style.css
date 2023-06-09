@@ -1,0 +1,199 @@
+html, body { height: 100% }
+
+table { border-collapse:collapse; border:0 }
+
+td,th,div {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+}
+
+/*td {border:#F00 thin double}*/
+
+.frm {
+	position:absolute;
+    -webkit-border-radius:6px;
+       -moz-border-radius:6px;
+            border-radius:6px;
+    -webkit-box-shadow:2px 2px 3px rgba(0, 0, 0, 0.4);
+       -moz-box-shadow:2px 2px 3px rgba(0, 0, 0, 0.4);
+            box-shadow:2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+#titleFrm {
+	width:427px;
+	height:138px;
+	background:#d2daf4
+}
+
+#title {
+	padding-top:12px;
+	font-size:22px;
+	text-shadow:1px 1px white
+}
+
+a { color:inherit }
+
+p span { text-decoration:underline; cursor:pointer }
+
+#method_answer {
+	padding-top:8px;
+	line-height:0;
+	color:#666;
+	text-shadow:1px 1px white
+}
+
+.popdiv {
+	top:130px;
+	background-color:#FFFFE0;
+	padding:0;
+	font-size:14px;
+}
+.popdiv span { color:gray }
+li { padding:5px 20px 0 2px; line-height:18px }
+
+#answer {
+	width:530px;
+	left:155px;
+	z-index:101;
+}
+#answer p { padding:5px 20px 2px 20px; line-height:18px }
+
+#method {
+	width:420px;
+	left:115px;
+	z-index:100;
+}
+
+#refFrm {
+	position:absolute;
+	left:442px;
+	width:580px;
+	height:137px;
+	background:#eee;
+	border:#bbb thin solid;
+	border-bottom:#eee thin solid
+}
+
+.legTitle { text-align:right; padding-right:9px; color:#999 }
+.legTitle a { font-size:14px; padding-right:12px; color:black }
+
+p { font-size:14px }
+
+#trees svg { background:#f5f5f5 }
+#trees a line { stroke-width:1.5px }
+#trees a line:hover, .lineWidest { stroke-width:4px }
+#trees text:hover { font-weight:bold; text-decoration: underline }
+.lineDotted { stroke:#ddd }
+
+#showSnp, #svgOrf { overflow:scroll; overflow-y:hidden }
+#svgOrf { position:relative }
+#svgOrf text { font-size:10px; text-anchor:middle }
+
+#snpTbl { table-layout:fixed }
+#snpTbl td {
+    font-family:Courier;
+    font-size:10px;
+    font-weight:bold;
+	white-space:nowrap;
+}
+#snpTbl td:nth-of-type(odd) { background:rgba(240,240,240,0.6) }
+
+#phenoTbl { border-right:1px solid lightgray; border-bottom:1.5px solid lightgray }
+#phenoTbl th { font-weight:bold }
+#phenoTbl tr:not(:first-child) td, #snpTbl td {
+    text-align:center;
+	padding: 0;
+	border-top:1px solid #CCC
+}
+#phenoTbl tr:first-child td { padding:1px 0 0 0 }
+#phenoTbl tr:nth-of-type(2) td, #snpTbl tr:nth-of-type(2) td { padding-top:3px }
+.outbreak { background:#FF9 }
+.human { background:#c8ffc8 }
+
+.baseline { stroke:lightgray }
+#axis line { stroke:#ababab }
+#axis text { fill:#ababab }
+
+.orf { fill:DarkGoldenRod; fill-opacity:0.7 }
+.pseu { fill:#999; fill-opacity:0.7 }
+.rna { fill:white; fill-opacity:0.7; stroke:#999; stroke-dasharray:3,1; stroke-width:0.5 }
+
+.lineWider { stroke-width:2px }
+.snpLineS { stroke:magenta }
+.snpLineN { stroke:DodgerBlue }
+.snpLine { stroke:gray }
+
+.posS { fill:hotpink }
+.posN { fill:steelblue }
+.pos { fill:gray }
+.bigger { font-weight:bold; font-size:13px }
+
+.changedLine { stroke:orange; stroke-width:2px }
+
+#map {
+	position:absolute;
+	top:25px; left:3px;
+	width:247px; height:290px;
+	border:#bbb thin solid;
+    -webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);
+       -moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);
+            box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.tips {
+  font-size:11px;
+  -webkit-border-radius:4px;
+     -moz-border-radius:4px;
+          border-radius:4px;
+}
+
+#tooltip, #tipBrch {
+  background-color:#000000;
+  opacity:0.6;
+  color:#ffffff;
+  position:absolute;
+  padding:1px 5px 2px 5px;
+  white-space:nowrap;
+}
+
+.hidden { display:none }
+
+#treeLg2 { position:absolute; top:380px; left:16px; color:#999 }
+#treeLg { font-size:12px; fill:#999 }
+
+.close {
+    float:right;
+    padding:0 5px 2px 5px;
+    background:#ddd;
+	text-shadow:1px 1px white
+}
+.close:hover {
+    color:#fff;
+	cursor:pointer
+}
+
+/*.step { color:#999; font-weight:bold }*/
+
+.Lewis_G {color:green}
+.Lewis_S {color:green}
+.Lewis_T {color:green}
+.Lewis_Y {color:green}
+.Lewis_C {color:green}
+.Lewis_Q {color:green}
+.Lewis_N {color:green}
+.Lewis_K {color:blue}
+.Lewis_R {color:blue}
+.Lewis_H {color:blue}
+.Lewis_D {color:red}
+.Lewis_E {color:red}
+.Lewis_A {color:DarkOrchid}
+.Lewis_V {color:DarkOrchid}
+.Lewis_L {color:DarkOrchid}
+.Lewis_I {color:DarkOrchid}
+.Lewis_P {color:DarkOrchid}
+.Lewis_W {color:DarkOrchid}
+.Lewis_F {color:DarkOrchid}
+.Lewis_M {color:DarkOrchid}
+/*.Lewis_- {color:#969696}
+.Lewis_X {color:#969696}*/
